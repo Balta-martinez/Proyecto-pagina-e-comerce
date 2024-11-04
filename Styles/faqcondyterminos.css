@@ -1,0 +1,211 @@
+
+.montserrat-font {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  padding-top: 80px;
+  background-color: #dbded5;
+  height: 100%;
+  color: #243e36;
+}
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #243e36;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  height: 90px;
+  transition: height 0.3s ease;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+.logo {
+  font-size: 30px;
+  color: #dbded5;
+  margin-left: 10px;
+}
+
+.offer {
+  position: absolute;
+  display: block;
+  color: #dbded5;
+  text-align: center;
+  margin-top: 30px;
+  margin-left: 200px;
+}
+
+.sale {
+  font-size: 25px;
+}
+
+.sale-subtext {
+  font-size: 12px;
+}
+
+.header-right {
+  margin-right: 10px;
+}
+
+.header-right a {
+  color: #dbded5;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+
+.navbar-collapse {
+  background-color: #243e36; 
+  padding: 10px;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler-icon {
+  background-color: #243e36; 
+}
+
+.nav-link{
+  color: #dbded5;
+  font-size: 20px;
+}
+@media (max-width: 768px) {
+  header {
+    height: auto;
+  }
+
+  .logo {
+    display: none; 
+  }
+
+  .offer {
+    display: none; 
+  }
+
+  .navbar-collapse {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .navbar-collapse.show + header {
+    height: auto;
+  }
+}
+
+.main-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.section-faq{
+    margin-top: 60px;
+margin-bottom: 40px;
+  text-align: center;
+}
+.section-terms {
+  margin-bottom: 130px;
+  text-align: center;
+}
+
+.section-faq h2,
+.section-terms h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #243e36;
+}
+
+.faq-item h3,
+.section-terms p {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #243e36;
+}
+
+.faq-item p,
+.section-terms ul li {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.line-separator {
+  border-top: 2px solid #243e36;
+  margin: 40px 0;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #243e36;
+  height: 90px;
+
+}
+
+.footer-left {
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+}
+
+.footer-left a {
+  margin-right: 20px;
+  color: #dbded5;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.footer-left i {
+  font-size: 30px;
+  margin-right: 10px;
+}
+
+.footer-right {
+  margin-right: 15px;
+}
+
+.footer-right a {
+  color: #dbded5;
+  font-size: 14px;
+  text-align: right;
+  margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+  .header-right a {
+    font-size: 20px;
+  }
+
+  .main-container {
+    padding: 10px;
+  }
+
+  .faq-item h3,
+  .section-terms p {
+    font-size: 16px;
+  }
+}
