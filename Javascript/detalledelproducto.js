@@ -107,7 +107,6 @@ const productos = [
       document.querySelector(".product-info h2").textContent = producto.nombre;
       document.querySelector(".product-info p").textContent = producto.descripcion;
       document.querySelector(".product-details-list").innerHTML = `
-        <li><strong>ID:</strong> ${producto.id}</li>
         <li><strong>Marca:</strong> ${producto.marca}</li>
         <li><strong>Stock:</strong> ${producto.stock} unidades</li>
         <li><strong>Categoría:</strong> ${producto.categoria}</li>

@@ -9,7 +9,7 @@ formulario.onsubmit = function loginUsuario(evento) {
   const password = document.querySelector("#password").value;
 
   if (nombreUsuario === username && passwordUsuario === password) {
-    alert("Bienvenido")
+    alert("Bienvenido, has ingresado correctamente")
     window.location.href = "nuevoproducto.html"
 } else{
     alert("Nombre de usuario y/o contraseña incorrectos")
